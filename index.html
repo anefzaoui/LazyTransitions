@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>windows</title>
+<meta charset="utf-8">
+<script src="js/LazyTransitions.js"></script>
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link rel="stylesheet" href="style/LazyTransitions.css">
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+a{
+font-size:1.5rem;
+display:block;
+margin:.5rem auto;
+background-color:white;
+color:rgb(45,45,45);
+width:70%;
+}
+h1{
+font-size:2rem;
+display:block;
+margin:2rem auto;
+background-color:white;
+color:rgb(45,45,45);
+width:70%;
+}
+</style>
+</head>
+<body>
+
+<section role="region" id="screen4" style="background-color:red">
+<center>
+<h1>"screen4" Screen : 4th layer</h1>
+<a href="#root">Go to main screen</a><br/>
+<a href="#screen2">Go to screen 2</a><br/>
+<a href="#screen3">Go to screen 3</a><br/>
+<br/>
+</center>
+</section>
+
+<section role="region" id="screen3" style="background-color:green">
+<center>
+<h1>"screen3" Screen : 3rd layer</h1>
+<a href="#root">Go to main screen</a><br/>
+<a href="#screen2">Go to screen 2</a><br/>
+<a href="#screen4">Go to screen 4</a><br/>
+<br/>
+</center>
+</section>
+
+<section role="region" id="screen2" style="background-color:blue" class="">
+<center>
+<h1>"screen2" Screen : 2nd layer</h1>
+<a href="#root">Go to main screen</a><br/>
+<a href="#screen3">Go to screen 3</a><br/>
+<a href="#screen4">Go to screen 4</a><br/>
+<br/>
+</center>
+</section>
+
+<section role="region" id="root" style="background-color:grey" class="peek">
+<center>
+<h1>"Root" Screen : Main screen</h1>
+<a href="http://blog.nefzaoui.com" target="_blank">external link</a><br/>
+<a href="#screen2">Go to screen 2</a><br/>
+<a href="#screen3">Go to screen 3</a><br/>
+<a href="#screen4">Go to screen 4</a><br/>
+<br/>
+</center>
+</section>
+
+
+</body>
+</html>
